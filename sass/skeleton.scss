@@ -33,9 +33,18 @@ a {
 }
 
 .main-counter-container {
+	h5 {
+		text-align: center;
+		z-index: 10;
+		position: relative;
+		font-size: 25px;
+		color: $theme-blue;
+		font-weight: bold;
+		margin: 10px 0;
+		font-family: "Inter";
+	}
 	position: relative;
 	#counter {
-		border: solid 1px;
 		margin: 0 auto;
 		text-align: center;
 		border-color: black;
@@ -44,18 +53,20 @@ a {
 		border-top-right-radius: 20px;
 		border-bottom-left-radius: 20px;
 		border-bottom-right-radius: 20px;
-		display: flex;
-		flex-wrap: wrap;
 		padding: 48px 34px;
 		position: absolute;
 		left: 0;
 		right: 0;
-		top: -20px;
-		background-color: white;
-		justify-content: center;
+		top: -40px;
+		background-color: $theme-gray;
+		article {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 		@media (min-width: 1200px) {
 			width: 970px;
-			justify-content: center;
+			// justify-content: center;
 			top: -40px;
 		}
 		div {
@@ -64,14 +75,15 @@ a {
 		p {
 			font-size: 94px;
 			font-weight: bold;
-			color: #f03d93;
-			-webkit-text-stroke-width: 0.5px;
+			color: $theme-pink;
+			-webkit-text-stroke-width: 1px;
 			-webkit-text-stroke-color: black;
 		}
 
 		span {
-			font-size: 19px;
+			font-size: 21px;
 			font-weight: bold;
+			color: $theme-blue;
 		}
 	}
 }
@@ -144,7 +156,7 @@ main {
 		background-color: $theme-pink;
 		margin: 0;
 		overflow: hidden;
-	
+
 		@media (min-width: 1200px) {
 			background-color: $theme-pink;
 			width: 100%;
