@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    var countDownDate = new Date("2022-11-20T00:00:00.000-05:00").getTime();
+    var countDownDate = new Date("2024-11-05T00:00:00.000-05:00").getTime();
     setInterval(function () {
 
         var now = new Date().getTime();
@@ -29,22 +29,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         //acá creo los textos que iran dentro de los elementos html
 
-        //dias // hago este ajuste no lindo para que aparezca en cero
-        var text = document.createTextNode("00");
-        // var text = document.createTextNode(daysLeft);
-        var textDiaSpan = document.createTextNode("Días");
+        // cuando termina la cuenta empieza a ir en negativo, 
+        // entonces la linea con los ceros está creada para que se lean los ceros hay que descomentarla y comentar las de daysleft
+        //dias 
+        // var text = document.createTextNode("00");
+        var text = document.createTextNode(daysLeft);
+        var textDiaSpan = document.createTextNode("Days");
         //horas
-        var textHoras = document.createTextNode("00");
-        // var textHoras = document.createTextNode(hours);
-        var textHorasSpan = document.createTextNode("Horas");
+        // var textHoras = document.createTextNode("00");
+        var textHoras = document.createTextNode(hours);
+        var textHorasSpan = document.createTextNode("Hours");
         //minutos
-        var textMinutos = document.createTextNode("00");
-        // var textMinutos = document.createTextNode(minutes);
-        var textMinutosSpan = document.createTextNode("Minutos");
+        // var textMinutos = document.createTextNode("00");
+        var textMinutos = document.createTextNode(minutes);
+        var textMinutosSpan = document.createTextNode("Minutes");
         //segundos
-        var textSegundos = document.createTextNode("00");
-        // var textSegundos = document.createTextNode(seconds);
-        var textSegundosSpan = document.createTextNode("Segundos");
+        // var textSegundos = document.createTextNode("00");
+        var textSegundos = document.createTextNode(seconds);
+        var textSegundosSpan = document.createTextNode("Seconds");
 
 
         //acá agrego los textos creados a los elementos creados 
