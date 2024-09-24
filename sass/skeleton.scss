@@ -77,28 +77,18 @@ a {
 }
 
 @mixin postulate-link {
-	font-size: 23px;
+	width: 188px;
+	font-size: 16px;
+	margin-top: 0;
+	margin-bottom: 0;
 	background-color: $theme-blue;
 	padding: 12px;
 	border-radius: 18px;
 	color: white;
 	display: block;
-	width: 250px;
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
 	font-weight: bold;
-	@media (min-width: 768px) {
-		width: 350px;
-		font-size: 32px;
-	}
-	@media (min-width: 1200px) {
-		width: 188px;
-		font-size: 16px;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
 }
 
 button {
@@ -151,43 +141,32 @@ main {
 		}
 	}
 	section.idea-dospuntocero {
-		background-image: url("img/Fondo-sin-texto.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: right;
-		height: 350px;
+		background-color: $theme-pink;
 		margin: 0;
 		overflow: hidden;
 		@media (min-width: 768px) {
 			height: 500px;
 		}
 		@media (min-width: 1200px) {
-			background-image: url("img/Fondo-header-1920.png");
-			height: 810px;
+			background-color: $theme-pink;
 			width: 100%;
 			margin: 0 auto;
 		}
 		h1 {
 			text-align: center;
 			font-size: 50px;
-			padding-top: 120px;
 			display: block;
-			color: #bbff50;
-			-webkit-text-stroke-width: 1px;
-			-webkit-text-stroke-color: black;
-			text-transform: uppercase;
-			span {
-				color: white;
-			}
+			color: white;
+
 			@media (min-width: 768px) {
 				font-size: 69px;
-				padding-top: 272px;
 			}
 			@media (min-width: 1200px) {
-				position: relative;
-				left: 219px;
-				top: 11px;
 				font-size: 100px;
+				max-width: 757px;
+				margin: 0 auto;
+				font-size: 100px;
+				padding-top: 130px;
 			}
 		}
 	}
