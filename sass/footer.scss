@@ -1,17 +1,18 @@
 footer {
+    max-width: 1400px;
+    margin: 0 auto;
     ul {
         display: flex;
         justify-content: start;
-        padding-left: 20px;
+        padding-left: 0;
+        padding-top: 50px;
+        @media (min-width: 1200px) {
+            padding-left: 60px;
+
+        }
         li {
             margin: 0 5px;
         }
-    }
-
-    .logos-footer {
-        display: flex;
-        align-items: center;
-        padding-left: 20px;
     }
 
     section.copyright {

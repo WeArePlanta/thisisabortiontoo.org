@@ -3,7 +3,7 @@ require_once 'header.php';
 ?>
 <section class="idea-dospuntocero">
     <h1>
-        This Is An Abortion Too…
+        This Is <br> Abortion Too…
     </h1>
     <h3>This November, every abortion story is on the line. And it’s up to all of us to vote to protect our
         rights.</h3>
@@ -48,8 +48,8 @@ require_once 'header.php';
 
 
 <section class="beneficios">
-    <h2>IN NOVEMBER, 10 STATES HAVE ABORTION-RELATED CONSTITUTIONAL AMENDMENT MEASURES ON BALLOTS. HERE’S A
-        BREAKDOWN:</h2>
+    <h2>IN NOVEMBER, 10 STATES HAVE ABORTION-RELATED CONSTITUTIONAL AMENDMENT MEASURES ON BALLOTS.
+        <br> Here how to vote to protect abortion rights: </h2>
     <article class="tarjetas">
 
 
@@ -242,21 +242,38 @@ require_once 'header.php';
 
     </article>
 </section>
-<section class="share-your-story">
+<section class="share-your-story" id="share">
     <p class="img-paragraph">
         "I NEVER WOULD HAVE DREAMED OF NEEDING ABORTION, UNTIL MY WIFE AND I FOUND OUT OUR FIRST HAD SMA TYPE 1
         IN UTERO"
         <span>#THISISABORTIONTOO</span>
     </p>
-    <p>HOLA, escribinos tu consulta</p>
-    <form action="#contacto" id="form" method="POST">
-        <div>
-            <label>Nombre<input type="text" name="nombre" id="nombre" placeholder="Nombre" required></label>
-            <label>Mail<input type="mail" placeholder="Mail" id="mail" name="mail" required></label>
-        </div>
-        <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Consulta" required></textarea>
-        <button>Enviar</button>
-    </form>
+    <?php
+    if (isset($success)) {
+        if ($success) {
+            echo '<br><h2 style="text-align: center;">Thank you for sharing your story with us.<br><br> Every abortion counts in the ballots November 5th</h2>';
+        } else {
+            echo '<br><h2 style="text-align: center;">It seems there was an error.<br><br> Please try again later. Thank you for your patience!</h2>';
+        }
+    } else {
+    ?>
+        <article>
+            <p>
+                <span>Share Your Story</span>
+                Leave your email and tell us about your Story
+            </p>
+            <form action="#share" id="form" method="POST">
+                <div>
+                    <label>Email<input type="mail" placeholder="Email" id="mail" name="mail" required></label>
+                </div>
+                <label>Share Your Story</label>
+                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Share Your Story" required></textarea>
+                <button class="send-btn">Send</button>
+            </form>
+        <?php
+    }
+        ?>
+        </article>
 </section>
 
 <?php

@@ -1,18 +1,19 @@
 header {
 	display: flex;
 	align-items: center;
-    justify-content: flex-end;
+	justify-content: center;
 	margin-top: 15px;
 	margin-bottom: 15px;
 
 	.postula-ahora-header {
-		@media (min-width: 1200px) {
-			display: block;
-		}
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
 
 		a {
 			@include postulate-link;
-		
+			margin: 0;
 		}
 	}
 }

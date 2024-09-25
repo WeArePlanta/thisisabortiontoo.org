@@ -138,12 +138,11 @@ main {
 		}
 	}
 	section.idea-dospuntocero {
-		background-color: $theme-pink;
+		background-color: $theme-blue;
 		margin: 0;
 		overflow: hidden;
 
 		@media (min-width: 1200px) {
-			background-color: $theme-pink;
 			width: 100%;
 			margin: 0 auto;
 		}
@@ -221,7 +220,7 @@ main {
 			}
 
 			p.img-paragraph {
-				@include	paragraph-card;
+				@include paragraph-card;
 			}
 			p.content-paragraph {
 				font-size: 16px;
@@ -238,7 +237,6 @@ main {
 		}
 	}
 
-
 	section.beneficios {
 		h2 {
 			text-align: center;
@@ -246,7 +244,7 @@ main {
 			font-size: 30px;
 			@media (min-width: 1200px) {
 				font-size: 41px;
-				max-width: 1058px;
+				max-width: 1150px;
 				margin: 0 auto;
 				margin-bottom: 100px;
 				margin-top: 95px;
@@ -269,11 +267,6 @@ main {
 					margin-left: 50px;
 					margin-right: 50px;
 					width: 350px;
-
-					&.yellow {
-						position: relative;
-						bottom: -75px;
-					}
 				}
 				img {
 					display: block;
@@ -285,7 +278,7 @@ main {
 					text-align: center;
 					max-width: 300px;
 					margin: 0 auto;
-					
+
 					h6 {
 						color: $theme-pink;
 						font-size: 32px;
@@ -304,13 +297,65 @@ main {
 		}
 	}
 
-
 	section.share-your-story {
-		display: flex;
+		
+		h2 {
+			margin: 10px;
+			margin-top: 50px;
+		}
+		@media (min-width: 1200px) {
+			display: flex;
+			justify-content: center;
+		}
 		p.img-paragraph {
-			@include	paragraph-card;
+			@include paragraph-card;
+			margin-right: 50px;
+		}
+		article {
+			p {
+				color: $theme-blue;
+				font-weight: bold;
+				padding-bottom: 30px;
+				span {
+					font-size: 34px;
+					display: block;
+					margin-bottom: 20px;
+					padding-top: 50px;
+
+					@media (min-width: 1200px) {
+						padding-top: 30px;
+						font-size: 45px;
+					}
+				}
+			}
+
+			form {
+				label {
+					font-size: 18px;
+					padding-top: 13px;
+					display: block;				}
+				input,
+				textarea {
+					border-color: #f4f4f4;
+					border-radius: 10px;
+					display: block;
+					padding: 6px;
+					margin-top: 10px;
+					border-style: solid;
+					font-size: 12px;
+					width: 100%;
+
+				}
+
+				.send-btn {
+					@include postulate-link;
+					margin: 0;
+					border: none;
+					text-transform: uppercase;
+					margin-top: 25px;
+				}
+			}
+
 		}
 	}
-
-	
 }

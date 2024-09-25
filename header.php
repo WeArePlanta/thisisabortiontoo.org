@@ -2,20 +2,17 @@
 
 if (
     isset($_POST['mail'])
-    && (isset($_POST['nombre']))
     && (isset($_POST['consulta']))
 ) {
     $success = false;
 
     if (
         !empty(strip_tags($_POST['mail'])) &&
-        !empty(strip_tags($_POST['nombre'])) &&
         !empty(strip_tags($_POST['consulta']))
     ) {
-        $to      = 'naticiraolo@weareplanta.com';
-        $subject = 'Mensaje dejado en Formulario de Contacto';
+        $to      = 'gigi@weareplanta.com';
+        $subject = 'Mensaje dejado en Formulario de Contacto en thisisabortiontoo.org';
         $message = 'Recibiste un mensaje en tu sitio web con la siguiente informaci&oacute;n:<br>
-		Nombre: ' . strip_tags($_POST['nombre']) . '<br>
 		Consulta: ' . strip_tags($_POST['consulta']) . '<br>
 		Mail: ' . strip_tags($_POST['mail']) . '<br>
 		IP: ' . $_SERVER['REMOTE_ADDR'];
@@ -71,15 +68,16 @@ if (
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <script src="js/main.js?version=2"></script>
-    <title>This Is An Abortion Too…</title>
-    <link rel="stylesheet" href="style.min.css?version=2">
+    <title>This Is Abortion Too…</title>
+    <link rel="stylesheet" href="style.min.css?version=4">
 </head>
 
 <body>
     <header>
 
         <section class="postula-ahora-header">
-            <a href="https://www.paypal.com/ar/home" class="postulate-ahora" target="_blank">DONATE</a>
+            <a href="mailto:info@thisisabortiontoo.org" class="postulate-ahora" target="_blank">DONATE</a>
+            <a href="#share" class="postulate-ahora" >SHARE YOUR STORY</a>
         </section>
     </header>
 
