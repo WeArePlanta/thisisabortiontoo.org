@@ -3,8 +3,7 @@ require_once 'header.php';
 ?>
 <section class="idea-dospuntocero">
     <h1>
-        This Is <br> Abortion Too…
-    </h1>
+        #ThisIsAbortionToo </h1>
     <h3>This November, every abortion story is on the line. And it’s up to all of us to vote to protect our
         rights.</h3>
 </section>
@@ -49,7 +48,8 @@ require_once 'header.php';
 
 <section class="beneficios">
     <h2>IN NOVEMBER, 10 STATES HAVE ABORTION-RELATED CONSTITUTIONAL AMENDMENT MEASURES ON BALLOTS.
-        <br> Here how to vote to protect abortion rights: </h2>
+        <br> Here how to vote to protect abortion rights:
+    </h2>
     <article class="tarjetas">
 
 

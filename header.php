@@ -69,14 +69,14 @@ if (
     <meta name="theme-color" content="#ffffff">
     <script src="js/main.js?version=2"></script>
     <title>This Is Abortion Too…</title>
-    <link rel="stylesheet" href="style.min.css?version=4">
+    <link rel="stylesheet" href="style.min.css?version=6">
 </head>
 
 <body>
     <header>
 
         <section class="postula-ahora-header">
-            <a href="mailto:info@thisisabortiontoo.org" class="postulate-ahora" target="_blank">DONATE</a>
+            <!-- <a href="mailto:info@thisisabortiontoo.org" class="postulate-ahora" target="_blank">DONATE</a> -->
             <a href="#share" class="postulate-ahora" >SHARE YOUR STORY</a>
         </section>
     </header>

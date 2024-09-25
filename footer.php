@@ -4,7 +4,7 @@
 
         <section class="redes-sociales-footer">
             <ul>
-            
+
                 <li><a href="mailto:info@thisisabortiontoo.org" target="_blank"><img src="img/mail.png"
                             alt="link a email"></a>
                 </li>
@@ -13,9 +13,13 @@
             </ul>
         </section>
         <section class="copyright">
-            <p>ACÁ VA A IR EL POWERED BY PLANTA SUSTENTABLE DEL SITIO IDEA <br> All Rights Reserved.</p>
+                <a href="https://www.greengeeks.com/" target="_blank" rel="nofollow">
+                    <img src="img/greenwebsite.png" alt="Green website">
+                </a>
+
+                <p>Low impact website powered by <a href="https://www.weareplanta.com/" target="_blank">Planta</a></p>
         </section>
     </footer>
-</body>
+    </body>
 
-</html>
+    </html>
