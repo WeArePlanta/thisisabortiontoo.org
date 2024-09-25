@@ -263,94 +263,18 @@ main {
 		}
 	}
 
-	section.desafios {
-		margin-top: 50px;
-
-		h3 {
-			font-size: 30px;
-			color: #bbff50;
-			-webkit-text-stroke-width: 0.5px;
-			-webkit-text-stroke-color: black;
-			margin-bottom: 5px;
-			@media (min-width: 768px) {
-				text-align: center;
-				font-size: 40px;
-				max-width: 860px;
-				margin: 0 auto;
-			}
-		}
-		ul {
-			margin-top: 30px;
-			@media (min-width: 768px) {
-				max-width: 600px;
-				margin: 0 auto;
-				margin-top: 60px;
-			}
-			@media (min-width: 1200px) {
-				display: flex;
-				flex-wrap: wrap;
-				max-width: 1300px;
-				justify-content: center;
-			}
-			li {
-				font-size: 17px;
-				overflow: auto;
-				margin-bottom: 20px;
-				@media (min-width: 768px) {
-					font-size: 22px;
-				}
-				@media (min-width: 1200px) {
-					max-width: 350px;
-					font-size: 17px;
-					margin-right: 50px;
-				}
-				span {
-					font-weight: bold;
-				}
-			}
-
-			li.desafios-li::before {
-				content: " ";
-				display: inline-block;
-				background-size: contain;
-				background-image: url("img/icono-embarazada.svg");
-				width: 56px;
-				height: 74px;
-				background-repeat: no-repeat;
-				float: left;
-				margin-right: 20px;
-				margin-bottom: 67px;
-			}
-
-			li.desafios-li.martillo::before {
-				background-image: url("img/icono-martillo.svg");
-			}
-			li.desafios-li.utero::before {
-				background-image: url("img/icono-utero.svg");
-			}
-			li.desafios-li.trompada::before {
-				background-image: url("img/icono-trompada.svg");
-			}
-			li.desafios-li.test::before {
-				background-image: url("img/icono-test.svg");
-			}
-			li.desafios-li.blister::before {
-				background-image: url("img/icono-blister.svg");
-			}
-		}
-	}
 
 	section.beneficios {
 		h2 {
 			text-align: center;
-			font-size: 41px;
-			color: #fce864;
-			-webkit-text-stroke-width: 0.5px;
-			-webkit-text-stroke-color: black;
+			color: $theme-pink;
+			font-size: 30px;
 			@media (min-width: 1200px) {
+				font-size: 41px;
 				max-width: 1058px;
 				margin: 0 auto;
 				margin-bottom: 100px;
+				margin-top: 95px;
 			}
 		}
 
@@ -364,12 +288,7 @@ main {
 				margin-bottom: 100px;
 			}
 			figure.tarjeta {
-				box-shadow: -1px 0px 8px 12px #00183415;
-				border-radius: 20px;
-				border-bottom-right-radius: 81px;
-				border-top-left-radius: 81px;
 				max-width: 270px;
-				padding-bottom: 59px;
 				margin: 0 auto 80px;
 				@media (min-width: 1200px) {
 					margin-left: 50px;
@@ -381,42 +300,29 @@ main {
 						bottom: -75px;
 					}
 				}
-				picture {
-					height: 125px;
+				img {
+					display: block;
 					margin: 0 auto;
-					padding: 21px;
-					border-radius: 65px;
-					margin-bottom: 50px;
-					margin-top: 20px;
-					position: relative;
-					width: 125px;
-					text-align: center;
-					top: -20px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					&.rosa {
-						background-color: #f03d93;
-					}
-					&.amarillo {
-						background-color: #fce864;
-					}
-					&.violeta {
-						background-color: #6929d2;
-					}
-					@media (min-width: 1200px) {
-						margin-top: -19px;
-					}
+					width: 248px;
 				}
 
 				figcaption {
 					text-align: center;
-					font-size: 16px;
-					color: #33333380;
-					max-width: 206px;
+					max-width: 300px;
 					margin: 0 auto;
-					@media (min-width: 768px) {
-						font-size: 20px;
+					
+					h6 {
+						color: $theme-pink;
+						font-size: 32px;
+						margin: 25px 0 7px;
+					}
+					p {
+						font-size: 18px;
+					}
+					span {
+						font-size: 18px;
+						font-weight: bold;
+						display: block;
 					}
 				}
 			}
