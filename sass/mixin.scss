@@ -14,3 +14,31 @@
 	font-weight: bold;
 }
 
+@mixin paragraph-card {
+	width: 100%;
+	margin: 0 auto;
+	background: $theme-blue;
+	color: white;
+	border: solid 5px $theme-pink;
+	padding: 25px;
+	font-size: 18px;
+	text-align: left;
+	max-width: 330px;
+	margin: 0 auto;
+	@media (min-width: 1200px) {
+		max-width: 533px;
+		margin-left: 70px;
+		font-size: 24px;
+		padding: 100px 60px;
+	}
+	span {
+		background-color: $theme-pink;
+		margin-top: 35px;
+		display: inline-block;
+		padding: 2px 15px;
+		@media (min-width: 1200px) {
+			margin-top: 95px;
+			font-size: 33px;
+		}
+	}
+}
