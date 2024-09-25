@@ -11,12 +11,12 @@ $theme-gray : #F4F4F4;
 
 $breakpoint-hamburger : 768px;
 
+@import "mixin";
 @import "normalize";
 @import "fonts";
 @import "skeleton";
 @import "header";
 @import "footer";
-@import "mixin";
 
 
 // tamaños imgs
