@@ -10,7 +10,7 @@ if (
         !empty(strip_tags($_POST['mail'])) &&
         !empty(strip_tags($_POST['consulta']))
     ) {
-        $to      = 'gigi@weareplanta.com';
+        $to      = 'info@thisisabortiontoo.org';
         $subject = 'Mensaje dejado en Formulario de Contacto en thisisabortiontoo.org';
         $message = 'Recibiste un mensaje en tu sitio web con la siguiente informaci&oacute;n:<br>
 		Consulta: ' . strip_tags($_POST['consulta']) . '<br>
